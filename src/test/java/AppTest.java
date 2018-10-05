@@ -9,4 +9,12 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
+    
+    @Test public void testFailed(){
+        assertNotNull(null);
+    }
+    
+    @Test public void testPassed(){
+        assertNotNull("Best Test Ever");
+    }
 }
